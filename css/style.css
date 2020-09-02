@@ -1,0 +1,32 @@
+html {
+  font-family: 'Inter var';
+}
+
+.row-center {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 576px) {
+  .wrapper {
+    max-width: 570px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 760px;
+  }
+}
+
+@media (min-width: 1028px) {
+  .wrapper {
+    max-width: 990px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .wrapper {
+    max-width: 1100px;
+  }
+}

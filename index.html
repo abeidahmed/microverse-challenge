@@ -3,11 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <title>Our landing page</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <h1>Hello world from Hanan</h1>
+    <header id="header" class="shadow sticky top-0 bg-white z-50">
+      <div class="wrapper row-center mx-auto justify-between h-16 px-4">
+        <div>
+          <img class="h-8 w-8" id="header-img" src="./assets/logo.svg" alt="" />
+        </div>
+        <nav id="nav-bar">
+          <a class="nav-link text-gray-700 hover:text-gray-500" href="#home"
+            >Home</a
+          >
+          <a
+            class="nav-link text-gray-700 ml-2 hover:text-gray-500"
+            href="#about"
+            >About</a
+          >
+          <a
+            class="nav-link text-gray-700 ml-2 hover:text-gray-500"
+            href="#testimonial"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </header>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script src="js/index.js"></script>
   </body>

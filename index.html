@@ -23,7 +23,33 @@
             alt=""
           />
         </div>
-        <nav id="nav-bar">
+        <div class="md:hidden">
+          <button
+            id="open-btn"
+            class="inline-flex items-center justify-center rounded-md text-gray-700 focus:outline-none focus:text-gray-900 focus:bg-gray-200 p-2 -mr-2 -mt-2"
+          >
+            <svg viewBox="0 0 20 20" fill="currentColor" class="menu w-6 h-6">
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <button
+            id="close-btn"
+            class="hidden inline-flex items-center justify-center rounded-md text-gray-700 focus:outline-none focus:text-gray-900 focus:bg-gray-200 p-2 -mr-2 -mt-2"
+          >
+            <svg viewBox="0 0 20 20" fill="currentColor" class="x w-6 h-6">
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <nav id="nav-bar" class="hidden md:block">
           <a class="nav-link text-gray-700 hover:text-gray-500" href="#home"
             >Home</a
           >
@@ -38,6 +64,25 @@
             >Contact</a
           >
         </nav>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            href="#home"
+            class="text-gray-700 block px-3 py-2 font-medium w-full focus:bg-gray-200 focus:text-gray-900 active:text-gray-900 hover:bg-gray-200 rounded-md"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="text-gray-700 block px-3 py-2 font-medium w-full focus:bg-gray-200 focus:text-gray-900 active:text-gray-900 hover:bg-gray-200 rounded-md"
+            >About</a
+          >
+          <a
+            href="#testimonial"
+            class="text-gray-700 block px-3 py-2 font-medium w-full focus:bg-gray-200 focus:text-gray-900 active:text-gray-900 hover:bg-gray-200 rounded-md"
+            >Testimonial</a
+          >
+        </div>
       </div>
     </header>
     <section id="home" class="wrapper mx-auto px-4 py-8">
